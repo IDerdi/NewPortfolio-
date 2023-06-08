@@ -41,6 +41,10 @@ a{
     padding: 24px;
 }
 
+main {
+    position: relative;
+}
+
 .p-24px > img {
     display: block;
     margin: auto auto 6px auto;
@@ -179,13 +183,14 @@ nav span{
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    top: 50px;
-    z-index: 99999;
+    top: 60px;
+    z-index: 999;
     backdrop-filter: blur(40px);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 3rem;
 }
 
 .dropdown1 ul{
