@@ -412,19 +412,65 @@ nav span{
 }
 
 
-.grid1{
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1.5rem;
-}
 
 .social-icon{
+    margin-top: 12px;
+    padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FBFBFC;
+    border-radius: 30px;
 }
 
+.social-icon a {
+    font-size: 2.5rem;
+    color: black;
+    transition: 1s;
+}
 
+.social-icon a:nth-child(1):hover {
+    color: #bc2a8d;
+}
+.social-icon a:nth-child(2):hover {
+    color: #9b9a9a;
+}
+.social-icon a:nth-child(3):hover {
+    color: #00acee;
+}
+
+.grid1-item2 a {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    width: 50%;
+}
+
+.grid1-item2 a:nth-child(1) {
+    background-image: url(img/socialmedia.jpeg);
+    
+}
+
+.grid1-item2 a:nth-child(2) {
+    background-image: url(img/trendyol.jpeg);
+}
+.grid1-item2 a article {
+    padding: 1rem;
+    margin-top: 3.6rem;
+    background: linear-gradient(transparent, #121212);
+}
+
+ h1,h4  {
+    margin: 0;
+}
+
+.grid1-item3{
+    height: 100%;
+}
 
 
 
@@ -444,10 +490,6 @@ nav span{
     }
    
 }
-
-
-
-
 
 
 @media  (max-width:1040px){
@@ -476,6 +518,16 @@ nav span{
        
     }
    
+    .grid1-item2 {
+        order: 3;
+        width: 100%;
+        margin-top:1rem ;
+     }
+
+    .col-3{
+        width: 50%;
+    }
+ 
 }
 
 @media (max-width:768px){
@@ -513,6 +565,15 @@ nav span{
    }
    .img-box{
         margin: auto;
+   }
+   .col-3{
+    width: 100%;
+   }
+   .grid1-item3{
+    margin-top: 1rem;
+   }
+   .grid1-item2{
+    margin-top: 2rem;
    }
 }
 
