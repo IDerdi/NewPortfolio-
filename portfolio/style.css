@@ -462,6 +462,7 @@ nav span{
     padding: 1rem;
     margin-top: 3.6rem;
     background: linear-gradient(transparent, #121212);
+    backdrop-filter: blur(1px);
 }
 
  h1,h4  {
@@ -471,12 +472,66 @@ nav span{
 .grid1-item3{
     height: 100%;
 }
+.grid1-item1{
+    height: 100%;
+}
+
+.progres .info h1{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+:root{
+    --lr:var(--clr);
+}
+
+.radius{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
 
+.html{
+    background: #fff linear-gradient(to right, transparent 50%, rgb(148, 224, 68)  0);
+}
 
+.radius h3{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 1;
+}
 
+.radius h4{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 17px;
+    white-space:nowrap; 
+    z-index: 1;
+    color: var(--clr);
+}
 
+.radius::before{
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50;
+}
 
+.radius::after{
+    content: "";
+    position: absolute;
+    inset:7px;
+    border-radius: 50%;
+    background: #fff ;
+}
 
 
 
@@ -524,7 +579,7 @@ nav span{
         margin-top:1rem ;
      }
 
-    .col-3{
+    .belirleyici .col-3{
         width: 50%;
     }
  
@@ -566,14 +621,14 @@ nav span{
    .img-box{
         margin: auto;
    }
-   .col-3{
+   .belirleyici .col-3{
     width: 100%;
    }
    .grid1-item3{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
    }
    .grid1-item2{
-    margin-top: 2rem;
+    margin-top: 4rem;
    }
 }
 
