@@ -448,6 +448,8 @@ nav span{
     text-decoration: none;
     overflow: hidden;
     width: 50%;
+    height: 120px;
+
 }
 
 .grid1-item2 a:nth-child(1) {
@@ -458,11 +460,26 @@ nav span{
 .grid1-item2 a:nth-child(2) {
     background-image: url(img/trendyol.jpeg);
 }
+
+
+
+
 .grid1-item2 a article {
     padding: 1rem;
     margin-top: 3.6rem;
-    background: linear-gradient(transparent, #121212);
+    background: linear-gradient(transparent, #000000);
     backdrop-filter: blur(1px);
+    transition: all 1s ;
+    height: 100%;
+}
+
+.grid1-item2 a:hover article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
 }
 
  h1,h4  {
@@ -494,12 +511,12 @@ nav span{
 
 
 .html{
-    background: #fff linear-gradient(to right, transparent 50%, rgb(148, 224, 68)  0);
+    background: #fff linear-gradient(to right, transparent 30%, rgb(148, 224, 68)  0);
 }
 
 .radius h3{
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%,-50%);
    z-index: 1;
@@ -507,7 +524,7 @@ nav span{
 
 .radius h4{
     position: absolute;
-    top: 62%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
     font-size: 17px;
