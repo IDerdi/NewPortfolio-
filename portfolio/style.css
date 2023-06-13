@@ -510,9 +510,18 @@ nav span{
 .progress-valuert,.progress-textrt{
     color: rgb(11, 116, 100);
 }
+.progress-valuepyt,.progress-textpyt{
+    color: #ee8754;
+}
+.progress-valuedj,.progress-textdj{
+    color: #957195;
+}
+.progress-valuewp,.progress-textwp{
+    color: #1a1411;
+}
 
 
-.circular-progressshtml , .circular-progresssjs , .circular-progresssbs , .circular-progresssrt{
+.circular-progressshtml , .circular-progresssjs , .circular-progresssbs , .circular-progresssrt , .circular-progressspyt , .circular-progresssdj , .circular-progressswp{
     position: relative;
     height: 100px;
     width: 100px;
@@ -524,7 +533,7 @@ nav span{
 }
 
 
-.circular-progressshtml::before , .circular-progresssjs::before , .circular-progresssbs::before , .circular-progresssrt::before{
+.circular-progressshtml::before , .circular-progresssjs::before , .circular-progresssbs::before , .circular-progresssrt::before , .circular-progressspyt::before , .circular-progresssdj::before , .circular-progressswp::before{
     content: "";
     position: absolute;
     width: 85px;
@@ -533,13 +542,13 @@ nav span{
     background-color: #fff;
 }
 
-.progress-valuehtml , .progress-valuejs , .progress-valuebs , .progress-valuert{
+.progress-valuehtml , .progress-valuejs , .progress-valuebs , .progress-valuert ,  .progress-valuepyt , .progress-valuedj , .progress-valuewp{
     position: relative;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.progress-texthtml , .progress-textjs , .progress-textbs , .progress-textrt{
+.progress-texthtml , .progress-textjs , .progress-textbs , .progress-textrt , .progress-textpyt , .progress-textdj , .progress-textwp{
     position: relative;
     font-size: .9rem;
 }

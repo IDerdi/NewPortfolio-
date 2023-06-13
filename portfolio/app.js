@@ -7,12 +7,25 @@ let main=document.querySelector("main")
 
 let circularProgressHtml=document.querySelector(".circular-progressshtml"),
     progressValueHtml=document.querySelector(".progress-valuehtml"),
+
     circularProgressJs=document.querySelector(".circular-progresssjs"),
     progressValueJs=document.querySelector(".progress-valuejs"),
+
     circularProgressBs=document.querySelector(".circular-progresssbs"),
     progressValueBs=document.querySelector(".progress-valuebs"),
+
     circularProgressRt=document.querySelector(".circular-progresssrt"),
-    progressValueRt=document.querySelector(".progress-valuert");
+    progressValueRt=document.querySelector(".progress-valuert"),
+
+    progressValuePyt=document.querySelector(".progress-valuepyt"),
+    circularProgressPyt=document.querySelector(".circular-progressspyt"),
+
+    progressValueDj=document.querySelector(".progress-valuedj"),
+    circularProgressDj=document.querySelector(".circular-progresssdj"),
+
+    progressValueWp=document.querySelector(".progress-valuewp"),
+    circularProgressWp=document.querySelector(".circular-progressswp");
+ 
 
 
 
@@ -58,7 +71,7 @@ let progressJs = setInterval(()=>{
 
 let progressStartValueBs=0,
     progressEndValueBs=90,
-    speedBs= 80;
+    speedBs= 50;
 
     let progressBs = setInterval(()=>{
         progressStartValueBs++;
@@ -89,6 +102,77 @@ let progressStartValueRt=0,
         }
     
     }, speedRt)
+
+
+// PYTHON
+
+
+let progressStartValuePyt=0,
+    progressEndValuePyt=40,
+    speedPyt= 100;
+
+    let progressPyt = setInterval(()=>{
+        progressStartValuePyt++;
+        
+        progressValuePyt.innerHTML=`${progressStartValuePyt}%`
+        circularProgressPyt.style.background=`conic-gradient(#ee8754 ${progressStartValuePyt* 3.6 }deg , #ededed 0deg)`
+    
+        if(progressStartValuePyt == progressEndValuePyt ){
+            clearInterval(progressPyt)
+        }
+    
+    }, speedPyt)
+
+
+
+
+
+// DJANGO
+
+let progressStartValueDj=0,
+    progressEndValueDj=50,
+    speedDj= 100;
+
+    let progressDj = setInterval(()=>{
+        progressStartValueDj++;
+        
+        progressValueDj.innerHTML=`${progressStartValueDj}%`
+        circularProgressDj.style.background=`conic-gradient(#957195 ${progressStartValueDj* 3.6 }deg , #ededed 0deg)`
+    
+        if(progressStartValueDj == progressEndValueDj ){
+            clearInterval(progressDj)
+        }
+    
+    }, speedDj)
+
+
+
+
+
+
+
+// WORDPRESS
+
+let progressStartValueWp=0,
+    progressEndValueWp=20,
+    speedWp= 100;
+
+    let progressWp = setInterval(()=>{
+        progressStartValueWp++;
+        
+        progressValueWp.innerHTML=`${progressStartValueWp}%`
+        circularProgressWp.style.background=`conic-gradient(#1a1411 ${progressStartValueWp* 3.6 }deg , #ededed 0deg)`
+    
+        if(progressStartValueWp == progressEndValueWp ){
+            clearInterval(progressWp)
+        }
+    
+    }, speedWp)
+
+
+
+
+
 
 
 
