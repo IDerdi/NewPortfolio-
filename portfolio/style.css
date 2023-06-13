@@ -498,19 +498,33 @@ nav span{
     letter-spacing: 1px;
 }
 
-.circular-progresss{
+.progress-valuehtml,.progress-texthtml{
+    color: #94e044;
+}
+.progress-valuejs,.progress-textjs{
+    color: #ffb000;
+}
+.progress-valuebs,.progress-textbs{
+    color: rgb(255, 102, 172);
+}
+.progress-valuert,.progress-textrt{
+    color: rgb(11, 116, 100);
+}
+
+
+.circular-progressshtml , .circular-progresssjs , .circular-progresssbs , .circular-progresssrt{
     position: relative;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background: conic-gradient(var(--bgclr) 3.6deg , #ededed 0deg);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.circular-progresss::before{
+
+.circular-progressshtml::before , .circular-progresssjs::before , .circular-progresssbs::before , .circular-progresssrt::before{
     content: "";
     position: absolute;
     width: 85px;
@@ -519,18 +533,38 @@ nav span{
     background-color: #fff;
 }
 
-.progress-value{
+.progress-valuehtml , .progress-valuejs , .progress-valuebs , .progress-valuert{
     position: relative;
-    color: #94e044;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.progress-text{
+.progress-texthtml , .progress-textjs , .progress-textbs , .progress-textrt{
     position: relative;
-    color:#94e044 ;
     font-size: .9rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media  (max-width:1150px){
 
