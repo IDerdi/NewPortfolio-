@@ -448,6 +448,8 @@ nav span{
     text-decoration: none;
     overflow: hidden;
     width: 50%;
+    height: 120px;
+
 }
 
 .grid1-item2 a:nth-child(1) {
@@ -458,10 +460,26 @@ nav span{
 .grid1-item2 a:nth-child(2) {
     background-image: url(img/trendyol.jpeg);
 }
+
+
+
+
 .grid1-item2 a article {
     padding: 1rem;
     margin-top: 3.6rem;
-    background: linear-gradient(transparent, #121212);
+    background: linear-gradient(transparent, #000000);
+    backdrop-filter: blur(1px);
+    transition: all 1s ;
+    height: 100%;
+}
+
+.grid1-item2 a:hover article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
 }
 
  h1,h4  {
@@ -471,16 +489,48 @@ nav span{
 .grid1-item3{
     height: 100%;
 }
+.grid1-item1{
+    height: 100%;
+}
 
+.progres .info h1{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
 
+.circular-progresss{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: conic-gradient(var(--bgclr) 3.6deg , #ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.circular-progresss::before{
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
+.progress-value{
+    position: relative;
+    color: #94e044;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
-
-
-
-
-
+.progress-text{
+    position: relative;
+    color:#94e044 ;
+    font-size: .9rem;
+}
 
 @media  (max-width:1150px){
 
@@ -524,7 +574,7 @@ nav span{
         margin-top:1rem ;
      }
 
-    .col-3{
+    .belirleyici .col-3{
         width: 50%;
     }
  
@@ -566,14 +616,14 @@ nav span{
    .img-box{
         margin: auto;
    }
-   .col-3{
+   .belirleyici .col-3{
     width: 100%;
    }
    .grid1-item3{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
    }
    .grid1-item2{
-    margin-top: 2rem;
+    margin-top: 4rem;
    }
 }
 
