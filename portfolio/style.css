@@ -498,61 +498,39 @@ nav span{
     letter-spacing: 1px;
 }
 
-:root{
-    --lr:var(--clr);
-}
-
-.radius{
+.circular-progresss{
     position: relative;
-    width: 100px;
     height: 100px;
+    width: 100px;
     border-radius: 50%;
+    background: conic-gradient(var(--bgclr) 3.6deg , #ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-.html{
-    background: #fff linear-gradient(to right, transparent 30%, rgb(148, 224, 68)  0);
-}
-
-.radius h3{
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   z-index: 1;
-}
-
-.radius h4{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 17px;
-    white-space:nowrap; 
-    z-index: 1;
-    color: var(--clr);
-}
-
-.radius::before{
-    content: "";
-    display: block;
-    height: 100%;
-    margin-left: 50%;
-    transform-origin: left;
-    border-radius: 0 100% 100% 0/50;
-}
-
-.radius::after{
+.circular-progresss::before{
     content: "";
     position: absolute;
-    inset:7px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    background: #fff ;
+    background-color: #fff;
 }
 
+.progress-value{
+    position: relative;
+    color: #94e044;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
-
-
+.progress-text{
+    position: relative;
+    color:#94e044 ;
+    font-size: .9rem;
+}
 
 @media  (max-width:1150px){
 
