@@ -261,6 +261,8 @@ nav span{
     flex: none;
 }
 
+
+
 .img-box img{
     display: block;
     height: 100%;
@@ -521,6 +523,7 @@ nav span{
 }
 
 
+
 .circular-progressshtml , .circular-progresssjs , .circular-progresssbs , .circular-progresssrt , .circular-progressspyt , .circular-progresssdj , .circular-progressswp{
     position: relative;
     height: 100px;
@@ -553,6 +556,23 @@ nav span{
     font-size: .9rem;
 }
 
+/* about */
+
+.about-img-box{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px 0 30px 0;
+    flex: none;
+}
+
+.about-img-box img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
 
 
 
